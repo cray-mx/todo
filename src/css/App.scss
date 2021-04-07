@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+$my-color: #f5f3f3;
+
+body {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: $my-color;
+  p {
+    display: inline;
+    font-size: 1.8em;
+    span {
+      color: blueviolet;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 35px;
+      width: 35px;
+      margin: 0 1em;
+    }
+  }
+}
+
+.add-item {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    width: 60vw;
+    height: 20%;
+    border-radius: 0.5em;
+    border: 3px solid rgb(12, 102, 187);
+    outline: none;
+    font-size: 1.1em;
+    padding: 0.8em 1em;
+
+    &:focus {
+      border: 3px solid rgb(5, 119, 226);
+    }
+  }
+  img {
+    width: 40px;
+    height: 45px;
+    margin-left: 1.3em;
+    cursor: pointer;
+  }
+}
+
+.show-items {
+  text-align: center;
+  font-size: 1.5em;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c5c0c0;
+    img {
+      width: 30px;
+      height: 30px;
+      margin-left: 1em;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .add-item {
+    input {
+      width: 30vw;
+      height: 4vh;
+      font-size: 1.4em;
+    }
+
+    img {
+      width: 60px;
+      height: 65px;
+      margin-left: 3em;
+    }
+  }
+}
